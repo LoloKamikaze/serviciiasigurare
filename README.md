@@ -1,2 +1,2 @@
-# serviciiasigurare
-servicii de asigurare pentru teza de an TULBURE PAVEL II201
+# servicii-asigurare
+servicii asigurare teza de an

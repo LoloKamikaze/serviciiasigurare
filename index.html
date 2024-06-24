@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <div class="header" id="header">
+        <div id="loggo">
+    <img class="logo" src="code/usm-modular-furniture-logo.jpg" alt="logo">
+        </div>
+        <div class="header2">
+    <div class="header1">asig </div>
+    <div class="header2">servicii de asigurari</div>
+        </div>
+        <div class=telefoane>
+            <div class="contact">Contacteaza-ne:</div>
+        <div class="telefon">(022) 991 992</div>
+        <div class="telefon">(022) 992 993</div>
+        <div class="telefon">(022) 993 994</div>
+        </div>
+    </div>
+</head>
+<body>
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="code/pngtree-real-estate-banner-background-a-person-holding-a-key-in-front-image_13523352.png" style="width:100%">
+      <div class="text">Asigurare pe casa</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="code/360_F_308445331_ZZinysRse5xOZacNTnoQqG24TAy7ftZ5.jpg" style="width:100%">
+      <div class="text">Asigurare pe masina/carte verde</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="code/home-banner.jpg" style="width:100%">
+      <div class="text">Asigurare pe viata</div>
+    </div>
+  
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+
+  <script>
+    let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 4000); 
+}
+
+
+
+  </script>
+
+  <div id="gaseste">Gaseste-ne pe harta!</div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIp-I-EfDp5qK57ST_RotaljhCZx1h1fQ&callback=initMap" async defer></script>
+<div id="map" style="height: 400px; width: 100%;"></div>
+<div id="buttonbckg">
+<button onclick="findRoute()"  id="butonmap" style="display: block; margin: 10px auto;">Gaseste cel mai apropiat traseu</button>
+</div>
+
+<script>
+  let map;
+  let directionsService;
+  let directionsRenderer;
+
+  function initMap() {
+    var hqLocation = { lat: 47.01945267781663, lng: 28.823028155954923 };
+    map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 14,
+      center: hqLocation
+    });
+    var marker = new google.maps.Marker({
+      position: hqLocation,
+      map: map,
+      title: 'HQ'
+    });
+
+    directionsService = new google.maps.DirectionsService();
+    directionsRenderer = new google.maps.DirectionsRenderer();
+    directionsRenderer.setMap(map);
+  }
+
+  function findRoute() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition((position) => {
+        var currentLocation = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude
+        };
+        calculateAndDisplayRoute(currentLocation);
+      }, () => {
+        alert('Geolocalizarea a eșuat.');
+      });
+    } else {
+      alert('Browser-ul dvs. nu suportă geolocalizarea.');
+    }
+  }
+
+  function calculateAndDisplayRoute(currentLocation) {
+    directionsService.route(
+      {
+        origin: currentLocation,
+        destination: { lat: 47.01945267781663, lng: 28.823028155954923 },
+        travelMode: 'DRIVING'
+      },
+      (response, status) => {
+        if (status === 'OK') {
+          directionsRenderer.setDirections(response);
+        } else {
+          alert('Solicitarea de direcții a eșuat din cauza: ' + status);
+        }
+      }
+    );
+  }
+</script>
+
+<div id="backround">
+  <div id=comanda>
+  <div class="comanda">Comanda asigurare online</div>
+  </div>
+  <div class="icons"> 
+    <a href="info.html">
+    <img class="icon" src="code/car.png" >
+    </a>
+    <a href="medical.html">
+    <img class="icon" src="code/cardiogram.png">
+    </a>
+    <a href="locuinta.html">
+    <img class="icon" src="code/house.png">
+    </a>
+    <a href="carteverde.html">
+    <img class="icon" src="code/road-with-broken-line.png">
+    </a>
+  </div>
+  <div class="subcomanda">
+    <div class="textt1">
+    <div class="textt">Asigurare pe autovehicul</div>
+    </div>
+    <div class="textt2">
+    <div class="textt">Asigurare medicala</div>
+    </div>
+    <div class="textt3">
+    <div class="textt">Asigurare pe locuinta</div>
+    </div>
+    <div class="textt4">
+    <div class="textt">Carte verde</div>
+    </div>
+  </div>
+  <div class="subutoane">
+    <a href="intrebari.html">
+    <button id="frecvente">Intrebari frecvente</button>
+    </a>
+    <a href="declaracazulasigurat.html">
+    <button id="declara">Declara cazul asigurat</button>
+    </a>
+  </div>
+
+</div>
+<div class="background-bottom">
+  <div class="stats">
+    <div class="peste">
+      <p class="pestein">Peste</p>
+      <p class="pestein">Peste</p>
+      <p class="pestein">Peste</p>
+
+    </div>
+    <div class="suma">
+      <p class="sumain1">500,000,000 lei</p>
+      <p class="sumain2">100,000,000 lei</p>
+      <p class="sumain3">120,000</p>
+    </div>
+    <div class="descrieri">
+      <P class="descriere" id="descriere1">răspundere asumată
+anul curent</P>
+      <P class="descriere" id="descriere2">achitari pentru despăgubiri
+anul curent</P>
+      <P class="descriere" id="descriere3">turiști asigurați
+anul curent</P>
+
+    </div>
+  </div>
+</div>
+<div class="bottom">
+  ©2024 All rights reserved - autor Tulbure Pavel I2201 - Teza de an - coordonator d-na Greta Sturza
+</div>
+</body>
+</html>

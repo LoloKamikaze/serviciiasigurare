@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="medical.css">
+    <div class="header">
+        <div id="loggo">
+    <img class="logo" src="code/usm-modular-furniture-logo.jpg" alt="logo">
+        </div>
+        <div class="header2">
+    <div class="header1">asig </div>
+    <div class="header2">servicii de asigurari</div>
+        </div>
+        <div class=telefoane>
+            <div class="contact">Contacteaza-ne:</div>
+        <div class="telefon">(022) 991 992</div>
+        <div class="telefon">(022) 992 993</div>
+        <div class="telefon">(022) 993 994</div>
+        </div>
+    </div>
+</head>
+<body>
+    <div class="head">
+        <a id="home" href="index.html">
+    <div class="acasa">⬅  Mergi pe pagina principala</div>
+        </a>
+        <div id="vehicul">Asigurare medicala</div>
+        <a id="questions" href="intrebari.html">
+        <div class="intrebari">Intrebari frecvente si raspunsuri ➡</div>
+        </a>
+    </div>
+    <div class="bottom">
+        <div id="casco"> Aici comanda asigurarea medicala peste hotare</div>
+         <form action="medical.php" method="post">
+             <div class="form-group">
+                 <label for="destinatia">Destinatia</label>
+                 <input type="text" class="form-control" id="destinatia" name="destination">
+             </div>
+             <div class="form-group">
+                 <label for="inceputul">Inceputul politei</label>
+                 <input type="datetime-local" class="form-control" id="inceputul" name="startt">
+             </div>
+         <div class="pretul">
+             <div class="form-group">
+                 <label for="sfarsitul">Sfarsitul politei</label>
+                 <input type="datetime-local" class="form-control" id="sfarsitul" name="endd">
+             </div>
+         </div>
+             <div class="form-group">
+                 <label for="tipul">Tipul de calatorie</label>
+                 <select name="cars"  class="form-control" id="tipul" name="typee">
+                    <option value="turism">Turism</option>
+                    <option value="munca">Munca fizica</option>
+                    <option value="sport">Sport activ</option>
+                  </select>
+             </div>
+             <div class="form-group">
+                 <label for="telefon">Numar de telefon (necesar)</label>
+                 <input type="text" class="form-control" id="telefon" name="nrcontact">
+             </div>
+             <div class="form-group">
+                 <label for="email">Adresa e-mail (necesar)</label>
+                 <input type="text" class="form-control" id="email" name="adresa">
+             </div>
+             
+             <button type="submit" id="button">Trimite</button>
+             <div id="info">*Dupa apasarea butonului, vei fi contactat de unul dintre agentii nostri.</div>
+         </form>
+     </div>
+     <div class="botom">
+        ©2024 All rights reserved - autor Tulbure Pavel I2201 - Teza de an - coordonator d-na Greta Sturza
+      </div>
+</body>
+</html>

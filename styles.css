@@ -1,0 +1,364 @@
+@font-face {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    src: url();
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+
+* {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 35px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.headerr {
+    display:flexbox;
+}
+
+.telefoane {
+    display:flex;
+    align-content:center;
+    justify-content:center;
+    flex-direction:row;
+}
+
+
+
+.logo {
+    width:150px;
+    height:50px;
+    margin-left:50px;
+}
+.header {
+    display:flex;
+    margin-top:20px;
+    margin-bottom:20px;
+    background-color:white;
+}
+
+.header2 {
+
+    align-items:center;
+    justify-self: flex-end;
+}
+
+.header1 {
+    color:black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:25px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.telefoane {
+    display:flex;
+    align-items:center;
+    margin-left:850px;
+}
+
+.telefon,
+.contact {
+    margin-right:15px;
+    margin-left:5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:20px;
+
+}
+
+#comanda {
+    display:flex;
+    justify-content:center;
+    margin-top:50px;
+    margin-bottom:50px;
+    font-size:25px;
+}
+
+.comanda {
+    margin-top:50px;
+}
+
+
+.icon {
+    width:100px;
+    height:100px;
+    display:inline-block;
+    border-radius:100%;
+    margin-left:15%;
+    margin-bottom:10px;
+
+
+}
+
+#backround {
+    background-color:aliceblue;
+    padding-bottom:100px;
+}
+
+.subcomanda {
+    display:flex;
+}
+
+.textt1 {
+    margin-left:215px;
+}
+
+.textt2 {
+    margin-left:185px;
+}
+
+.textt3 {
+    margin-left:205px;
+}
+
+.textt4 {
+    margin-left:233px;
+}
+
+.subutoane {
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  margin-top:100px;
+  
+}
+
+#frecvente,
+#declara {
+  height:100px;
+  width:350px;
+  background-color:#1F2937;
+  color:white;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:larger;
+  border-color:white;
+  border-radius:12px;
+}
+
+#frecvente:hover,
+#declara:hover {
+  background-color:white;
+  color:black;
+  border-color:black;
+  cursor:pointer;
+}
+
+.subcomanda {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size:larger;
+  font-weight:bold;
+}
+
+.background-bottom {
+  background-color: #1F2937;
+  padding-bottom:100px;
+  color:white;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.peste {
+  display:flex;
+  justify-content:center;
+  padding-top:100px;
+}
+
+.pestein {
+  padding-left:200px;
+  padding-right:200px;
+  font-size:20px;
+  font-weight:bolder;
+}
+
+.suma {
+  display:flex;
+  justify-content:center;
+}
+
+.sumain1 {
+  position:absolute;
+  margin-right:815px;
+}
+ 
+.sumain2 {
+  position:absolute;
+  margin-left:80px;
+}
+
+.sumain3 {
+  margin-left:920px;
+  position:absolute;
+}
+
+.suma {
+  color:red;
+  font-weight:bold;
+  font-size:larger;
+}
+
+.descrieri {
+  display:flex;
+  padding-top:25px;
+  justify-content:space-around;
+}
+
+#descriere1,
+#descriere2,
+#descriere3 {
+  position:absolute;
+}
+
+.descriere {
+  font-size:large;
+}
+
+#descriere1 {
+  margin-right:693px;
+}
+
+#descriere2 {
+  margin-left:259px;
+}
+
+#descriere3 {
+  margin-left:1063px;
+}
+
+.bottom {
+  padding-top:50px;
+  padding-bottom:50px;
+  background-color:aliceblue;
+  display:flex;
+  padding-left:10%;
+}
+
+body {
+  background-color:aliceblue;
+}
+
+.header {
+  background-color:white !important;
+  padding:20px;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+
+#gaseste {
+  padding-bottom:50px;
+  display:flex;
+  justify-content:center;
+  color:black;
+  font-weight:bold;
+  font-size:larger;
+  
+}
+
+#butonmap {
+  background-color:#1F2937;
+  color:white;
+  width:350px;
+  height:100px;
+  border-radius:12px;
+  font-size:large;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+#butonmap:hover {
+  background-color:white;
+  color:black;
+  cursor:pointer;
+}
+
+.icons:hover {
+  border-color:black;
+  border-radius: 5px;
+}

@@ -1,0 +1,189 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+.headerr {
+    display:flexbox;
+}
+
+.telefoane {
+    display:flex;
+    align-content:center;
+    justify-content:center;
+    flex-direction:row;
+}
+
+
+
+.logo {
+    width:150px;
+    height:50px;
+    margin-left:50px;
+}
+.header {
+    display:flex;
+    margin-top:20px;
+    margin-bottom:20px;
+    background-color:white;
+}
+
+.header2 {
+
+    align-items:center;
+    justify-self: flex-end;
+}
+
+.header1 {
+    color:black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:25px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.telefoane {
+    display:flex;
+    align-items:center;
+    margin-left:900px;
+}
+
+.telefon,
+.contact {
+    margin-right:15px;
+    margin-left:5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:20px;
+
+}
+
+.head {
+    background-color:#1F2937;
+    display:flex;
+    align-items:center;;
+    justify-content:space-between;
+}
+
+.acasa {
+    padding-top:30px;
+    padding-bottom:30px;
+    color:white;;
+    font-size:larger;
+    border-radius:15px;
+    margin-left:25px;
+}
+.head {
+    background-color:#1F2937;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    color:white;
+}
+
+.acasa {
+    padding-top:30px;
+    padding-bottom:30px;
+    color:white;;
+    font-size:larger;
+    border-radius:15px;
+    margin-left:25px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#vehicul {
+    color:white;
+    font-size:larger;
+}
+
+.intrebari {
+    color:white;
+    font-size:larger;
+}
+
+.bottom {
+    padding-top:50px;
+    padding-bottom:50px;
+    background-color:aliceblue;
+    padding-left:25%;
+    padding-right:25%;
+}
+
+.form-group {
+    padding-top:40px;
+    padding-left:25px;
+    color:black;
+    font-weight:bold;
+    font-size:larger;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.pretul {
+    display:flex;
+}
+
+#valuta {
+    padding-left:25px;
+}
+
+
+
+#button {
+    margin-top:50px;
+    height:50px;
+    width:100px;
+    border-radius:12px;
+}
+
+#button:hover {
+    background-color:azure;
+
+}
+
+#casco {
+    font-size:30px;
+    font-weight:bolder;
+    color:red;
+}
+
+.form-control {
+    height:35px;
+    width:500px;
+    border-radius:5px;
+}
+
+.form-control:hover {
+    background-color:azure;
+}
+
+#anul {
+    width:100px;
+}
+
+#suma {
+    width:100px;
+}
+
+#stagiul {
+    width:100px;
+}
+
+.botom {
+  background-color:#1F2937;
+  padding-top:50px;
+  padding-bottom:50px;
+  color:white;
+  display:flex;
+  padding-left:10%;
+}
+
+#info {
+    padding-top:15px;
+}
+
+#tipul {
+    border-color:black;
+    border-radius:5px;
+    height:40px;
+    width:250px;
+}
